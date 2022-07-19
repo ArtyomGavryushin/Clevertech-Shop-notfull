@@ -6,20 +6,20 @@ window.addEventListener('DOMContentLoaded', () => {
           fullMenu = document.querySelector('.third_level'),
           menuPhoto = document.querySelector('.image_watch_all');
 
-    function thirdLevelMenu(target){
+    function thirdLevelMenu(link){
+		menuPhoto.src = link;
+
 		menu.classList.toggle('hide');
 		menu.classList.toggle('fade');
 		fullMenu.onmouseleave = function(e){ menu.classList.toggle('hide'); }
     }
 
 	womenMenu.addEventListener('mouseover', () => {
-		menuPhoto.src = 'image/watch_all_promotions_women.jpg';
-		thirdLevelMenu();
+		thirdLevelMenu('image/watch_all_promotions_women.jpg');
 	});
 
 	manMenu.addEventListener('mouseover', () => {
-		menuPhoto.src = 'image/watch_all_promotions_man.webp';
-		thirdLevelMenu();
+		thirdLevelMenu('image/watch_all_promotions_man.webp');
 	});
 
 });
