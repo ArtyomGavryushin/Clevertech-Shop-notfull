@@ -1,0 +1,52 @@
+:root{
+    --white-background: #FEFEFE;
+    --white-text: #F5F5F5;
+    --black-color-text:#2D2D2D;
+    --dark-black-color-text: #1A1A1A;
+}
+/* Main content */
+.main_section{
+    background: linear-gradient(90deg, #304352, #0B1A99, #4286F4);
+    background-size: 200% 200%;
+    animation: animatedBG 20s linear infinite;
+}
+/* Animation for background */
+@keyframes animatedBG {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.content{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.clt_wear{
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: var(--white-text);
+    text-shadow: 0px 0px 15px rgba(77, 77, 77, 0.7);
+}
+.link_shop_now{
+    font-size: 1.75rem;
+    color: var(--white-text);
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #FD4747;
+    padding: 3px 20px;
+    border-radius: 30px;
+    transition: .5s all;
+}
+.link_shop_now:hover{
+    background-color: #D74242;
+    box-shadow: 0 0 5px #5B5B5B;
+}
