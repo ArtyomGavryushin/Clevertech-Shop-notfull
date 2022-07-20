@@ -4,6 +4,7 @@
     --black-color-text:#2D2D2D;
     --dark-black-color-text: #1A1A1A;
 }
+
 /* Main content */
 .main_section{
     background: linear-gradient(90deg, #304352, #0B1A99, #4286F4);
