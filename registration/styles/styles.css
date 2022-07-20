@@ -1,0 +1,112 @@
+:root{
+    --white-background: #FEFEFE;
+    --white-text: #F5F5F5;
+    --black-color-text:#2D2D2D;
+    --dark-black-color-text: #1A1A1A;
+    --gray-bg-color: #ECECEC;
+}
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form_header{
+	font-size: 2rem;
+	font-weight: bold;
+}
+.form_control{
+	position: relative;
+	margin: 15px 0px;
+}
+.form_inp{
+	width: 300px;
+    height: 20px;
+    font-size: 1.15rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ececec;
+    border: 1px solid #1F1F1F;
+    color: #272727;
+    margin: 10px 0;
+    position: relative;
+    outline: none;
+    transition: .5s all;
+}
+.extra_input_text{
+	position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    pointer-events: none;
+    font-weight: bold;
+    transition: .5s;
+}
+.form_inp:valid,
+.form_inp:focus{
+	box-shadow: 0px 0px 10px #5969A2;
+	background: var(--gray-bg-color);
+
+}
+.form_inp:valid ~ .extra_input_text,
+.form_inp:focus ~ .extra_input_text{
+	color: var(--black-color-text);
+	transform: translateX(10px) translateY(-7px);
+	font-size: .9rem;
+	padding: 0 10px;
+	background-color: var(--gray-bg-color);
+	border-left: 1px solid #1f1f1f;
+	border-right: 1px solid #1f1f1f;
+	letter-spacing: .1rem;
+}
+
+.btn_submit{
+	font-size: 1.3rem;
+    color: #fefefe;
+    background-color: #5969A2;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s all;
+}
+.btn_submit:hover{
+    background-color: #404b74;
+	color:#e9e9e9 ;
+}
+.smpl_text{
+	font-size: 1.2rem;
+    margin: 10px 0px;
+}
+.sign_up_href{
+	font-size: 1.35rem;
+    text-decoration: none;
+    color: #5969a2;
+    font-weight: bold;
+    transition: .5s;
+}
+.sign_up_href:hover{
+	color: #404b74;
+}
+.form-text {
+    margin-top: -0.5rem;
+    font-size: .875em;
+    color: #6c757d;
+}
+
+.alert{
+    width: 320px;
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.alert-danger{
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
